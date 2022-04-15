@@ -1,0 +1,155 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/11 14:16:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/11 14:16:23 INFO SparkContext: Running Spark version 3.0.1
+21/03/11 14:16:23 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/11 14:16:23 INFO ResourceUtils: ==============================================================
+21/03/11 14:16:23 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/11 14:16:23 INFO ResourceUtils: ==============================================================
+21/03/11 14:16:23 INFO SparkContext: Submitted application: Assignment_1 Question 1
+21/03/11 14:16:23 INFO SecurityManager: Changing view acls to: acp20cvs
+21/03/11 14:16:23 INFO SecurityManager: Changing modify acls to: acp20cvs
+21/03/11 14:16:23 INFO SecurityManager: Changing view acls groups to: 
+21/03/11 14:16:23 INFO SecurityManager: Changing modify acls groups to: 
+21/03/11 14:16:23 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20cvs); groups with view permissions: Set(); users  with modify permissions: Set(acp20cvs); groups with modify permissions: Set()
+21/03/11 14:16:23 INFO Utils: Successfully started service 'sparkDriver' on port 42616.
+21/03/11 14:16:23 INFO SparkEnv: Registering MapOutputTracker
+21/03/11 14:16:23 INFO SparkEnv: Registering BlockManagerMaster
+21/03/11 14:16:23 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/11 14:16:23 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/11 14:16:23 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/11 14:16:23 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20cvs/blockmgr-c3e70c21-1e61-42a7-838c-347e45bab102
+21/03/11 14:16:23 INFO MemoryStore: MemoryStore started with capacity 4.1 GiB
+21/03/11 14:16:23 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/11 14:16:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/11 14:16:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/11 14:16:24 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+21/03/11 14:16:24 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+21/03/11 14:16:24 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+21/03/11 14:16:24 INFO Utils: Successfully started service 'SparkUI' on port 4045.
+21/03/11 14:16:24 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node176.shef.ac.uk:4045
+21/03/11 14:16:24 INFO Executor: Starting executor ID driver on host sharc-node176.shef.ac.uk
+21/03/11 14:16:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44915.
+21/03/11 14:16:24 INFO NettyBlockTransferService: Server created on sharc-node176.shef.ac.uk:44915
+21/03/11 14:16:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/11 14:16:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node176.shef.ac.uk, 44915, None)
+21/03/11 14:16:24 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node176.shef.ac.uk:44915 with 4.1 GiB RAM, BlockManagerId(driver, sharc-node176.shef.ac.uk, 44915, None)
+21/03/11 14:16:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node176.shef.ac.uk, 44915, None)
+21/03/11 14:16:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node176.shef.ac.uk, 44915, None)
+21/03/11 14:16:25 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acp20cvs/com6012/ScalableML/HPC/spark-warehouse').
+21/03/11 14:16:25 INFO SharedState: Warehouse path is 'file:/home/acp20cvs/com6012/ScalableML/HPC/spark-warehouse'.
++------------------------------------------------------------------------------------------------------------------------------+
+|value                                                                                                                         |
++------------------------------------------------------------------------------------------------------------------------------+
+|199.72.81.55 - - [01/Jul/1995:00:00:01 -0400] "GET /history/apollo/ HTTP/1.0" 200 6245                                        |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:06 -0400] "GET /shuttle/countdown/ HTTP/1.0" 200 3985                             |
+|199.120.110.21 - - [01/Jul/1995:00:00:09 -0400] "GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0" 200 4085          |
+|burger.letters.com - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/countdown/liftoff.html HTTP/1.0" 304 0                      |
+|199.120.110.21 - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0" 200 4179       |
+|burger.letters.com - - [01/Jul/1995:00:00:12 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 304 0                           |
+|burger.letters.com - - [01/Jul/1995:00:00:12 -0400] "GET /shuttle/countdown/video/livevideo.gif HTTP/1.0" 200 0               |
+|205.212.115.106 - - [01/Jul/1995:00:00:12 -0400] "GET /shuttle/countdown/countdown.html HTTP/1.0" 200 3985                    |
+|d104.aa.net - - [01/Jul/1995:00:00:13 -0400] "GET /shuttle/countdown/ HTTP/1.0" 200 3985                                      |
+|129.94.144.152 - - [01/Jul/1995:00:00:13 -0400] "GET / HTTP/1.0" 200 7074                                                     |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /shuttle/countdown/count.gif HTTP/1.0" 200 40310                   |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786                       |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204                       |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /shuttle/countdown/count.gif HTTP/1.0" 200 40310                            |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786                                |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204                                |
+|129.94.144.152 - - [01/Jul/1995:00:00:17 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 304 0                               |
+|199.120.110.21 - - [01/Jul/1995:00:00:17 -0400] "GET /images/launch-logo.gif HTTP/1.0" 200 1713                               |
+|ppptky391.asahi-net.or.jp - - [01/Jul/1995:00:00:18 -0400] "GET /facts/about_ksc.html HTTP/1.0" 200 3977                      |
+|net-1-141.eden.com - - [01/Jul/1995:00:00:19 -0400] "GET /shuttle/missions/sts-71/images/KSC-95EC-0916.jpg HTTP/1.0" 200 34029|
++------------------------------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
+==================== A.1 ====================
+There are 13067 requests in total from Japanese Universities.
+====================================================
+==================== A.2 ====================
+There are 25009 requests in total from UK Universities.
+====================================================
+==================== A.3 ====================
+There are 218449 requests in total from US Universities.
+====================================================
+==================== B.1.1 ====================
+Top 9 most frequent universities (hosts) from Japan.
+['u-tokyo.ac.jp', 'nagoya-u.ac.jp', 'ritsumei.ac.jp', 'osaka-u.ac.jp', 'ims.ac.jp', 'tohoku.ac.jp', 'shizuoka.ac.jp', 'kyoto-u.ac.jp', 'jaist.ac.jp']
+====================================================
+==================== B.1.2 ====================
+Top 9 most frequent universities (hosts) from UK.
+['hensa.ac.uk', 'ucl.ac.uk', 'rl.ac.uk', 'man.ac.uk', 'bton.ac.uk', 'dundee.ac.uk', 'brunel.ac.uk', 'hw.ac.uk', 'soton.ac.uk']
+====================================================
+==================== B.1.3 ====================
+Top 9 most frequent universities (hosts) from US.
+['msstate.edu', 'berkeley.edu', 'nwu.edu', 'cmu.edu', 'caltech.edu', 'usf.edu', 'washington.edu', 'mit.edu', 'caltech.edu']
+====================================================
+/home/acp20cvs/com6012/ScalableML/HPC/../Code/Q1_code.py:107: UserWarning: You have mixed positional and keyword arguments, some input may be discarded.
+  ax.legend(wedges, labels=['%s - %1.2f%%' % (l, p) for l, p in zip(university, percent)], title="University", loc="center left", bbox_to_anchor=(1, 0, 0.5, 0.5))
++--------------------+------------------------------------------------------------+---------------+------------------+-------------------+
+|host                |request                                                     |HTTP reply code|bytes in the reply|time               |
++--------------------+------------------------------------------------------------+---------------+------------------+-------------------+
+|199.72.81.55        |GET /history/apollo/ HTTP/1.0                               |200            |6245              |1995-07-01 00:00:01|
+|unicomp6.unicomp.net|GET /shuttle/countdown/ HTTP/1.0                            |200            |3985              |1995-07-01 00:00:06|
+|199.120.110.21      |GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0   |200            |4085              |1995-07-01 00:00:09|
+|burger.letters.com  |GET /shuttle/countdown/liftoff.html HTTP/1.0                |304            |0                 |1995-07-01 00:00:11|
+|199.120.110.21      |GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0|200            |4179              |1995-07-01 00:00:11|
+|burger.letters.com  |GET /images/NASA-logosmall.gif HTTP/1.0                     |304            |0                 |1995-07-01 00:00:12|
+|burger.letters.com  |GET /shuttle/countdown/video/livevideo.gif HTTP/1.0         |200            |0                 |1995-07-01 00:00:12|
+|205.212.115.106     |GET /shuttle/countdown/countdown.html HTTP/1.0              |200            |3985              |1995-07-01 00:00:12|
+|d104.aa.net         |GET /shuttle/countdown/ HTTP/1.0                            |200            |3985              |1995-07-01 00:00:13|
+|129.94.144.152      |GET / HTTP/1.0                                              |200            |7074              |1995-07-01 00:00:13|
++--------------------+------------------------------------------------------------+---------------+------------------+-------------------+
+only showing top 10 rows
+
++------------------------------+-------------------+---+----+
+|host                          |time               |day|hour|
++------------------------------+-------------------+---+----+
+|race-server.race.u-tokyo.ac.jp|1995-07-02 11:00:52|2  |11  |
+|race-server.race.u-tokyo.ac.jp|1995-07-02 11:00:55|2  |11  |
+|race-server.race.u-tokyo.ac.jp|1995-07-02 11:00:59|2  |11  |
+|race-server.race.u-tokyo.ac.jp|1995-07-02 11:01:01|2  |11  |
+|ecc-1000.ecc.u-tokyo.ac.jp    |1995-07-02 12:25:56|2  |12  |
+|ecc-1000.ecc.u-tokyo.ac.jp    |1995-07-02 12:26:00|2  |12  |
+|ecc-1000.ecc.u-tokyo.ac.jp    |1995-07-02 12:26:04|2  |12  |
+|ecc-1000.ecc.u-tokyo.ac.jp    |1995-07-02 12:28:43|2  |12  |
+|xsi12.komaba.ecc.u-tokyo.ac.jp|1995-07-02 20:04:20|2  |20  |
+|xsi12.komaba.ecc.u-tokyo.ac.jp|1995-07-02 20:04:22|2  |20  |
++------------------------------+-------------------+---+----+
+only showing top 10 rows
+
++------------------+-------------------+---+----+
+|host              |time               |day|hour|
++------------------+-------------------+---+----+
+|poppy.hensa.ac.uk |1995-07-01 05:31:15|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:31:16|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:31:16|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:31:16|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:31:16|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:31:18|1  |5   |
+|sesame.hensa.ac.uk|1995-07-01 05:31:23|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:32:41|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:32:51|1  |5   |
+|poppy.hensa.ac.uk |1995-07-01 05:32:55|1  |5   |
++------------------+-------------------+---+----+
+only showing top 10 rows
+
++--------------------+-------------------+---+----+
+|host                |time               |day|hour|
++--------------------+-------------------+---+----+
+|bess.erc.msstate.edu|1995-07-02 13:31:48|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:49|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:49|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:49|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:55|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:55|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:56|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:31:56|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:32:08|2  |13  |
+|bess.erc.msstate.edu|1995-07-02 13:32:08|2  |13  |
++--------------------+-------------------+---+----+
+only showing top 10 rows
+

@@ -1,0 +1,208 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/11 23:02:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/11 23:03:06 INFO SparkContext: Running Spark version 3.0.1
+21/03/11 23:03:06 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/11 23:03:06 INFO ResourceUtils: ==============================================================
+21/03/11 23:03:06 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/11 23:03:06 INFO ResourceUtils: ==============================================================
+21/03/11 23:03:06 INFO SparkContext: Submitted application: Assignment_1 Question 1
+21/03/11 23:03:07 INFO SecurityManager: Changing view acls to: acp20cvs
+21/03/11 23:03:07 INFO SecurityManager: Changing modify acls to: acp20cvs
+21/03/11 23:03:07 INFO SecurityManager: Changing view acls groups to: 
+21/03/11 23:03:07 INFO SecurityManager: Changing modify acls groups to: 
+21/03/11 23:03:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20cvs); groups with view permissions: Set(); users  with modify permissions: Set(acp20cvs); groups with modify permissions: Set()
+21/03/11 23:03:08 INFO Utils: Successfully started service 'sparkDriver' on port 35506.
+21/03/11 23:03:08 INFO SparkEnv: Registering MapOutputTracker
+21/03/11 23:03:08 INFO SparkEnv: Registering BlockManagerMaster
+21/03/11 23:03:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/11 23:03:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/11 23:03:08 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/11 23:03:08 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20cvs/blockmgr-ccf384dc-8003-42f6-ae3d-636b93bdb59a
+21/03/11 23:03:08 INFO MemoryStore: MemoryStore started with capacity 15.8 GiB
+21/03/11 23:03:08 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/11 23:03:09 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/11 23:03:09 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/11 23:03:09 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+21/03/11 23:03:09 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node177.shef.ac.uk:4042
+21/03/11 23:03:10 INFO Executor: Starting executor ID driver on host sharc-node177.shef.ac.uk
+21/03/11 23:03:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43664.
+21/03/11 23:03:10 INFO NettyBlockTransferService: Server created on sharc-node177.shef.ac.uk:43664
+21/03/11 23:03:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/11 23:03:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node177.shef.ac.uk, 43664, None)
+21/03/11 23:03:10 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node177.shef.ac.uk:43664 with 15.8 GiB RAM, BlockManagerId(driver, sharc-node177.shef.ac.uk, 43664, None)
+21/03/11 23:03:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node177.shef.ac.uk, 43664, None)
+21/03/11 23:03:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node177.shef.ac.uk, 43664, None)
+21/03/11 23:03:12 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acp20cvs/com6012/ScalableML/HPC/spark-warehouse').
+21/03/11 23:03:12 INFO SharedState: Warehouse path is 'file:/home/acp20cvs/com6012/ScalableML/HPC/spark-warehouse'.
++------+-------+------+----------+
+|userId|movieId|rating|timestamp |
++------+-------+------+----------+
+|1     |307    |3.5   |1256677221|
+|1     |481    |3.5   |1256677456|
+|1     |1091   |1.5   |1256677471|
+|1     |1257   |4.5   |1256677460|
+|1     |1449   |4.5   |1256677264|
+|1     |1590   |2.5   |1256677236|
+|1     |1591   |1.5   |1256677475|
+|1     |2134   |4.5   |1256677464|
+|1     |2478   |4.0   |1256677239|
+|1     |2840   |3.0   |1256677500|
+|1     |2986   |2.5   |1256677496|
+|1     |3020   |4.0   |1256677260|
+|1     |3424   |4.5   |1256677444|
+|1     |3698   |3.5   |1256677243|
+|1     |3826   |2.0   |1256677210|
+|1     |3893   |3.5   |1256677486|
+|2     |170    |3.5   |1192913581|
+|2     |849    |3.5   |1192913537|
+|2     |1186   |3.5   |1192913611|
+|2     |1235   |3.0   |1192913585|
++------+-------+------+----------+
+only showing top 20 rows
+
++------+-------+------+---------+
+|userId|movieId|rating|timestamp|
++------+-------+------+---------+
+|56769 |1176   |4.0   |789652004|
+|237556|21     |3.0   |789652009|
+|237556|47     |5.0   |789652009|
+|237556|1079   |3.0   |789652009|
+|5358  |19     |1.0   |822873600|
++------+-------+------+---------+
+only showing top 5 rows
+
++------+-------+------+----------+
+|userId|movieId|rating|timestamp |
++------+-------+------+----------+
+|134365|7360   |3.5   |1174255665|
+|82130 |8641   |4.5   |1174255696|
+|50962 |2539   |3.5   |1174255770|
+|199733|1181   |2.5   |1174255790|
+|82130 |4545   |2.5   |1174255818|
++------+-------+------+----------+
+only showing top 5 rows
+
+==================== A ====================
+==================== ALS_1, 50 split ====================
+21/03/11 23:06:13 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/03/11 23:06:13 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/03/11 23:06:14 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/03/11 23:06:14 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+Root-mean-square error = 0.7901006615131382
+Mean square error = 0.6242590553234986
+Mean absolute error = 0.6007143472832116
+====================================================
+==================== ALS_1, 65 split ====================
+Root-mean-square error = 0.8083819414712758
+Mean square error = 0.6534813632968692
+Mean absolute error = 0.6087499076431555
+====================================================
+==================== ALS_1, 80 split ====================
+Root-mean-square error = 0.8599020708713054
+Mean square error = 0.7394315714887596
+Mean absolute error = 0.6450809571821634
+====================================================
+==================== ALS_2, 50 split ====================
+Root-mean-square error = 0.7852655803093435
+Mean square error = 0.61664203161857
+Mean absolute error = 0.5941896587002246
+====================================================
+==================== ALS_2, 65 split ====================
+Root-mean-square error = 0.8042518891604392
+Mean square error = 0.6468211012181354
+Mean absolute error = 0.6036280605422603
+====================================================
+==================== ALS_2, 80 split ====================
+Root-mean-square error = 0.8552948191831367
+Mean square error = 0.7315292277215144
+Mean absolute error = 0.6402987131144208
+====================================================
+==================== ALS_3, 50 split ====================
+Root-mean-square error = 0.7737990370637865
+Mean square error = 0.5987649497608432
+Mean absolute error = 0.5822923230448689
+====================================================
+==================== ALS_3, 65 split ====================
+Root-mean-square error = 0.7997022422533709
+Mean square error = 0.6395236762650692
+Mean absolute error = 0.595356913173763
+====================================================
+==================== ALS_3, 80 split ====================
+Root-mean-square error = 0.852174017902306
+Mean square error = 0.7262005567877596
+Mean absolute error = 0.6349620700441361
+====================================================
+====================================================
+==================== B ====================
+==================== kmeans_ALS_1, 50 split ====================
+[12200, 5924, 2657, 4059, 10221, 7986, 7551, 8722, 10941, 5555, 6038, 8095, 12631, 6320, 10667, 7601, 4993, 4289, 6748, 7232]
+Top 3 cluster sizes for split 1:
+[12631, 12200, 10941]
++---+---------------------------------------------------------------------------------------------------------------------------+----------+
+|id |features                                                                                                                   |prediction|
++---+---------------------------------------------------------------------------------------------------------------------------+----------+
+|10 |[-0.90493214, 0.022285173, 1.2335154, -1.4042989, 0.08567736, -0.62180364, 0.14067098, -0.3270647, -0.33209553, 0.71483487]|0         |
+|40 |[0.10359718, -0.033808894, 1.2086357, -1.5456609, -1.6320736, -0.20963334, 0.233058, -0.882709, -0.75293714, 0.27909237]   |19        |
+|50 |[-0.6820995, 0.36269754, 0.69052136, -1.2458898, -1.0248519, -0.55646527, -0.02669451, -0.886947, -0.91106623, 0.98091257] |8         |
+|60 |[0.082159914, 0.23167413, 1.0552311, -0.8769189, -0.88773245, -0.75720376, -0.23596127, -0.8225204, -1.2897636, 0.8784331] |18        |
+|110|[0.13750243, -0.3187772, 0.92681205, -1.3278977, -0.14433032, 0.006661881, 0.050001107, -0.7063884, 0.24083537, 1.2911934] |15        |
+|120|[-0.5351511, -0.11817143, 0.5903991, -1.4212543, -0.7788923, -0.932428, 0.09109644, -0.51240414, -0.57503647, 0.47061855]  |14        |
+|160|[-0.58130205, 0.26158172, 1.042057, -1.5045196, -0.4492242, -0.7982233, 0.30191714, -0.5420144, -0.5972409, 0.7423178]     |4         |
+|170|[0.053427126, 0.11830156, 0.54222304, -1.2713469, -1.0535709, -0.7809751, -0.13538215, 0.08688006, -1.1577374, 0.8300525]  |13        |
+|180|[-0.3215874, 0.5471021, 1.2562108, -1.2894678, -0.54903334, -0.65883553, 0.29416847, -0.71936595, -0.74094385, 0.66771924] |4         |
+|190|[-0.2794616, 0.39513054, 0.3536168, -0.7098221, -1.0251456, -0.6758954, -0.29061547, -1.1634365, -0.14597428, 0.66472447]  |10        |
++---+---------------------------------------------------------------------------------------------------------------------------+----------+
+only showing top 10 rows
+
+====================================================
+==================== kmeans_ALS_1, 65 split ====================
+[7725, 9846, 15364, 8050, 11282, 9642, 5906, 5242, 7174, 7104, 9205, 16818, 10111, 3256, 14566, 6421, 7639, 8814, 15998, 12720]
+Top 3 cluster sizes for split 2:
+[16818, 15998, 15364]
+====================================================
+==================== kmeans_ALS_1, 80 split ====================
+[13746, 14857, 17372, 9162, 15122, 4718, 9052, 17395, 6947, 18625, 11071, 16175, 6791, 9659, 11909, 9346, 21512, 9697, 7244, 11694]
+Top 3 cluster sizes for split 3:
+[21512, 18625, 17395]
+====================================================
++-------+----------------------------------+-------------------------------------------+
+|movieId|title                             |genres                                     |
++-------+----------------------------------+-------------------------------------------+
+|1      |Toy Story (1995)                  |Adventure|Animation|Children|Comedy|Fantasy|
+|2      |Jumanji (1995)                    |Adventure|Children|Fantasy                 |
+|3      |Grumpier Old Men (1995)           |Comedy|Romance                             |
+|4      |Waiting to Exhale (1995)          |Comedy|Drama|Romance                       |
+|5      |Father of the Bride Part II (1995)|Comedy                                     |
+|6      |Heat (1995)                       |Action|Crime|Thriller                      |
+|7      |Sabrina (1995)                    |Comedy|Romance                             |
+|8      |Tom and Huck (1995)               |Adventure|Children                         |
+|9      |Sudden Death (1995)               |Action                                     |
+|10     |GoldenEye (1995)                  |Action|Adventure|Thriller                  |
++-------+----------------------------------+-------------------------------------------+
+only showing top 10 rows
+
+==================== B_2_1, 50:50 split ====================
+Top 5 genres from training set of split 1
+['Drama', 'Comedy', 'Thriller', 'Action', 'Crime']
+=========================================================
+Top 5 genres from test set of split 1
+['Drama', 'Comedy', 'Thriller', 'Action', 'Crime']
+=========================================================
+==================== B_2_2, 65:35 split ====================
+Top 5 genres from training set of split 2
+['Drama', 'Comedy', 'Romance', 'Thriller', 'Crime']
+=========================================================
+Top 5 genres from test set of split 2
+['Drama', 'Comedy', 'Thriller', 'Romance', 'Action']
+=========================================================
+==================== B_2_3, 80:20 split ====================
+Top 5 genres from training set of split 3
+['Drama', 'Comedy', 'Romance', 'Thriller', 'Action']
+=========================================================
+Top 5 genres from test set of split 3
+['Drama', 'Comedy', 'Action', 'Adventure', 'Thriller']
+===========================================================
+============================================================
